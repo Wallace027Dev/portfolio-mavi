@@ -36,7 +36,7 @@ function Nav() {
           <a href="/">CONTACT</a>
         </div>
         <div className="user-title">
-          <h1>MARIA VITORIA ALCANTARA FRANÇA</h1>
+          <h1>MARIA FRANÇA</h1>
         </div>
       </Navigator>
     </>
