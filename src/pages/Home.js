@@ -17,11 +17,11 @@ const Main = styled.main`
 function Home() {
   return (
     <Main>
-      <Fotos foto={bairro} />
-      <Fotos foto={crianca} />
-      <Fotos foto={feira} />
-      <Fotos foto={henri} />
-      <Fotos foto={panificadora} />
+      <Fotos foto={bairro} alt='Bairro Ataíde' />
+      <Fotos foto={crianca} alt='Bairro Ataíde' />
+      <Fotos foto={feira} alt='Bairro Ataíde' />
+      <Fotos foto={henri} alt='Bairro Ataíde' />
+      <Fotos foto={panificadora} alt='Bairro Ataíde' />
     </Main>
   );
 }
