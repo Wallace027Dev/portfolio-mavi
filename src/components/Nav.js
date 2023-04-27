@@ -2,19 +2,19 @@ import styled from "styled-components";
 
 const Navigator = styled.nav`
   div {
-    margin-top: 6rem;
+    margin-top: 7rem;
   }
 
   .navigation {
     position: absolute;
-    left: 32px;
+    left: 2rem;
     top: 0;
     a {
       display: inline-block;
-      margin-right: 10px;
+      margin-right: 2rem;
       text-decoration: none;
       color: var(--font);
-			font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -23,7 +23,7 @@ const Navigator = styled.nav`
     top: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
-		font-size: 4rem;
+    font-size: 4rem;
   }
 `;
 
@@ -33,7 +33,7 @@ function Nav() {
       <Navigator>
         <div className="navigation">
           <a href="/">WORK</a>
-          <a href="/">CONTACT</a>
+          <a href="/about">ABOUT & CONTACT</a>
         </div>
         <div className="user-title">
           <h1>MARIA FRANÇA</h1>

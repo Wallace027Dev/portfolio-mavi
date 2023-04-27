@@ -14,12 +14,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 :root {
 	--font: #f7f7f7;
 	--bg-color: #161616;
+}
+
+.inspecionar {
+	border: red solid 1px;
 }
