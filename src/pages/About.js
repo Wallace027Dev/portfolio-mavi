@@ -6,7 +6,7 @@ const Main = styled.main`
     margin-top: 18rem;
     .imgBanner {
       width: 100%;
-		}
+    }
   }
   .about-form {
     display: flex;
@@ -16,7 +16,7 @@ const Main = styled.main`
 
     h2 {
       font-size: 2rem;
-			color: var(--font);
+      color: var(--font);
     }
     h3 {
       font-size: 1.5rem;
@@ -29,9 +29,9 @@ const Main = styled.main`
         display: block;
         text-align: left;
         label {
-					font-size: 2rem;
+          font-size: 2rem;
           font-weight: 500;
-					color: var(--font);
+          color: var(--font);
         }
         input,
         textarea {
@@ -41,10 +41,10 @@ const Main = styled.main`
           border-radius: 0.3rem;
           border: none;
           margin: 1.2rem 0 3rem 0;
-					font-family: "Bebas Neue", cursive;
-					font-size: 1.6rem;
-					padding: 1rem;
-					color: var(--inpt-font);
+          font-family: "Bebas Neue", cursive;
+          font-size: 1.6rem;
+          padding: 1rem;
+          color: var(--inpt-font);
         }
         textarea {
           height: 13.25rem;
@@ -52,14 +52,56 @@ const Main = styled.main`
         input {
           height: 4.25rem;
         }
-				button {
-					border-radius: 2rem;
-					border: none;
-					width: 9rem;
-					height: 4rem;
-					font-size: 1.8rem;
-					font-family: "Bebas Neue", cursive;
-				}
+        button {
+          border-radius: 2rem;
+          border: none;
+          width: 9rem;
+          height: 4rem;
+          font-size: 1.8rem;
+          font-family: "Bebas Neue", cursive;
+        }
+      }
+    }
+  }
+
+  /* Para telas menores que 1440px (tablets e celulares) */
+  @media screen and (max-width: 1440px) {
+    .about-form {
+      margin-top: 6rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .form {
+        form {
+          margin-top: 6rem;
+        }
+      }
+    }
+  }
+
+  /* Para telas menores que 768px (celulares em modo paisagem) */
+  @media screen and (max-width: 768px) {
+    .about {
+      margin-top: 24rem;
+      .imgBanner {
+        position: absolute;
+        object-fit: cover;
+        height: 10vh;
+        top: 0;
+        left: 0;
+      }
+    }
+    .about-form {
+      margin: 6rem auto;
+      text-align: center;
+      width: 75vw;
+      .form {
+        form {
+          input,
+          textarea {
+            width: 85vw;
+          }
+        }
       }
     }
   }
@@ -73,7 +115,7 @@ function About() {
       </div>
       <section className="about-form">
         <div>
-          <h2>Maria França, Nascida no Brasil em 2004, No Espírito Santo.</h2>
+          <h2>Nascida no Brasil em 2004, No Espírito Santo.</h2>
           <h3>
             Procuro oportunidades de trabalho onde eu possa aprender e agregar
             para a empresa. Fico a disposição!
