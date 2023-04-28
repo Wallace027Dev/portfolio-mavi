@@ -4,6 +4,7 @@ import Fotos from "../components/Fotos";
 import bairro from "../images/bairro.jpeg";
 import crianca from "../images/crianca.jpeg";
 import feira from "../images/feira.jpeg";
+import { Link } from "react-router-dom";
 //import henri from "../images/henri.jpeg";
 //import panificadora from "../images/panificadora.jpeg";
 
@@ -13,6 +14,11 @@ const Main = styled.main`
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
+
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: fade-in-down;
 
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
@@ -33,7 +39,9 @@ const Main = styled.main`
 function Home() {
   return (
     <Main>
-      <Fotos foto={bairro} alt="Paisagens" />
+      <Link to="landscapes">
+        <Fotos foto={bairro} alt="Paisagens" />
+      </Link>
       <Fotos foto={crianca} alt="Realismo" />
       <Fotos foto={feira} alt="Pinturas em Tela" />
     </Main>

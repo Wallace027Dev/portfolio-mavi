@@ -2,9 +2,9 @@
 
 html {
   font-size: 62.5%;
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -17,12 +17,45 @@ body {
 }
 
 :root {
-  --font: #ecebe9;
-  --bg-color: #161616;
-  --inpt-bg: #373737;
-  --inpt-font: #878787;
+  --font: #fffff0;
+  --bg-color: #030e0a;
+  --inpt-bg: #98a18c;
+  --inpt-font: #c5cab4;
 }
 
 .inspecionar {
   border: red solid 1px;
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

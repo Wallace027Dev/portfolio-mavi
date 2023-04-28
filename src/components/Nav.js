@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Navigator = styled.nav`
@@ -31,9 +32,9 @@ const Navigator = styled.nav`
   @media screen and (max-width: 768px) {
     .user-title {
       margin-top: 14rem;
-			h1{
-				font-size: 3.5rem;
-			}
+      h1 {
+        font-size: 3.5rem;
+      }
     }
     .navigation {
       visibility: hidden;
@@ -46,8 +47,8 @@ function Nav() {
     <>
       <Navigator>
         <div className="navigation">
-          <a href="/">WORK</a>
-          <a href="/about">ABOUT & CONTACT</a>
+          <Link to="/">WORK</Link>
+          <Link to="/about">ABOUT & CONTACT</Link>
         </div>
         <div className="user-title">
           <h1>MARIA FRANÇA</h1>

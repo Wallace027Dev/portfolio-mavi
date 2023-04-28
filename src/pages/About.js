@@ -1,7 +1,13 @@
 import styled from "styled-components";
 import banner from "../images/banner.webp";
+import Button from "../components/Button";
 
 const Main = styled.main`
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: fade-in-down;
+
   .about {
     margin-top: 18rem;
     .imgBanner {
@@ -51,14 +57,6 @@ const Main = styled.main`
         }
         input {
           height: 4.25rem;
-        }
-        button {
-          border-radius: 2rem;
-          border: none;
-          width: 9rem;
-          height: 4rem;
-          font-size: 1.8rem;
-          font-family: "Bebas Neue", cursive;
         }
       }
     }
@@ -134,7 +132,7 @@ function About() {
               rows="5"
               value={"Me diga o que deseja..."}
             />
-            <button>ENVIAR</button>
+            <Button />
           </form>
         </div>
       </section>
