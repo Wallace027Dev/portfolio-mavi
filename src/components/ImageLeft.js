@@ -26,13 +26,31 @@ const Main = styled.section`
     animation-name: fade-in-right;
   }
 
-	h1 {
+  h1 {
     font-size: 2.5rem;
     color: var(--font);
   }
   p {
     font-size: 1.5rem;
     color: var(--inpt-font);
+  }
+
+  /* Para telas menores que 1440px (tablets e celulares) */
+  @media screen and (max-width: 1440px) {
+    margin-bottom: 14rem;
+  }
+
+  /* Para telas menores que 768px (celulares em modo paisagem) */
+  @media screen and (max-width: 768px) {
+    img {
+      width: 40vw;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
   }
 `;
 

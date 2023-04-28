@@ -9,7 +9,6 @@ const Main = styled.main`
   animation-name: fade-in-down;
 
   .about {
-    margin-top: 18rem;
     .imgBanner {
       width: 100%;
     }
@@ -80,21 +79,17 @@ const Main = styled.main`
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
     .about {
-      margin-top: 24rem;
-      .imgBanner {
-        position: absolute;
-        object-fit: cover;
-        height: 10vh;
-        top: 0;
-        left: 0;
-      }
+      visibility: hidden;
+      margin-top: -12rem;
     }
     .about-form {
-      margin: 6rem auto;
+      margin: 0 auto;
       text-align: center;
       width: 75vw;
       .form {
         form {
+          margin-top: 2rem;
+
           input,
           textarea {
             width: 85vw;

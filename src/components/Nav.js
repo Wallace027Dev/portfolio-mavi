@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Navigator = styled.nav`
+  background-color: var(--inpt-bg);
+  height: 12rem;
   div {
-    margin-top: 7rem;
+    margin-top: 4rem;
   }
   a,
   h1 {
@@ -31,7 +33,7 @@ const Navigator = styled.nav`
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
     .user-title {
-      margin-top: 14rem;
+      margin-top: 4rem;
       h1 {
         font-size: 3.5rem;
       }

@@ -4,10 +4,10 @@ const Foot = styled.footer`
   .container {
     margin-top: 8rem;
     background-color: var(--inpt-bg);
+    height: 12rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 12rem;
     p {
       color: var(--inpt-font);
       font-size: 1.2rem;
