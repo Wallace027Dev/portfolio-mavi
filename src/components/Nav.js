@@ -5,6 +5,11 @@ const Navigator = styled.nav`
     margin-top: 7rem;
   }
 
+  a,
+  h1 {
+    color: var(--font);
+  }
+
   .navigation {
     position: absolute;
     left: 2rem;
@@ -13,7 +18,6 @@ const Navigator = styled.nav`
       display: inline-block;
       margin-right: 2rem;
       text-decoration: none;
-      color: var(--font);
       font-size: 2.5rem;
     }
   }

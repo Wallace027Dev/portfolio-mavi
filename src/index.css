@@ -1,24 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
 }
 
 body {
   margin: 0;
   text-align: center;
-	color: var(--font);
-	background-color: var(--bg-color);
+  background-color: var(--bg-color);
   font-family: "Bebas Neue", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
-	--font: #f7f7f7;
-	--bg-color: #161616;
+  --font: #ecebe9;
+  --bg-color: #161616;
+  --inpt-bg: #373737;
+  --inpt-font: #878787;
 }
 
 .inspecionar {
-	border: red solid 1px;
+  border: red solid 1px;
 }

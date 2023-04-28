@@ -4,8 +4,8 @@ import Fotos from "../components/Fotos";
 import bairro from "../images/bairro.jpeg";
 import crianca from "../images/crianca.jpeg";
 import feira from "../images/feira.jpeg";
-import henri from "../images/henri.jpeg";
-import panificadora from "../images/panificadora.jpeg";
+//import henri from "../images/henri.jpeg";
+//import panificadora from "../images/panificadora.jpeg";
 
 const Main = styled.main`
   margin-top: 18rem;
