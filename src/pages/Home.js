@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 //import panificadora from "../images/panificadora.jpeg";
 
 const Main = styled.main`
-  margin-top: 18rem;
+  margin-top: 14rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 1rem;
