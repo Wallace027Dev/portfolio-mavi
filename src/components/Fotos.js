@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FotoDiv = styled.div`
   position: relative;
-	margin: 0 1rem;
+  margin: 0 1rem;
   .container {
     overflow: hidden;
     display: flex;
@@ -10,7 +10,7 @@ const FotoDiv = styled.div`
     justify-content: space-between;
     height: 80vh;
     :hover {
-			cursor: pointer;
+      cursor: pointer;
       .desc-arte {
         opacity: 1;
         transition: opacity 0.75s ease;
@@ -18,7 +18,7 @@ const FotoDiv = styled.div`
       }
     }
   }
-	
+
   img {
     width: 100%;
     object-fit: cover;
@@ -32,6 +32,16 @@ const FotoDiv = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+  }
+
+  /* Para telas menores que 768px (celulares em modo paisagem) */
+  @media screen and (max-width: 768px) {
+		.container {
+    height: 20vh;
+		}
+    img {
+      height: 20vh;
+    }
   }
 `;
 

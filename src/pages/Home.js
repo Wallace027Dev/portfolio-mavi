@@ -22,7 +22,7 @@ const Main = styled.main`
 
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
-    margin: 150px 6rem;
+    margin: 15rem 6rem;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
@@ -30,10 +30,9 @@ const Main = styled.main`
 
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
-    margin: 150px 3rem;
-    grid-template-columns: 1fr;
-    grid-column-gap: 1;
-    grid-row-gap: 1rem;
+    margin: 15rem 3rem;
+    display: flex;
+    flex-direction: column;
   }
 `;
 function Home() {
