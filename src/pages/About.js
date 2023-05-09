@@ -103,7 +103,7 @@ function About() {
       <title>Sobre mim</title>
       <section className="about-form">
         <div>
-          <h2>Nascida no Brasil em 2004, No Espírito Santo.</h2>
+          <h2>Nascida no Brasil em 2004, em Niterói.</h2>
           <h3>
             Procuro oportunidades de trabalho onde eu possa aprender e agregar
             para a empresa. Fico a disposição!

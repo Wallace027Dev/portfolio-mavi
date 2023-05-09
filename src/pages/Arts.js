@@ -10,12 +10,12 @@ const Main = styled.section`
 
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
 
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
-    margin-top: 12rem;
+    margin-top: 4rem;
   }
 `;
 

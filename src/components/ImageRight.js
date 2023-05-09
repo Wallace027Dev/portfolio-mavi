@@ -4,7 +4,7 @@ const Main = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   margin-bottom: 12rem;
 
   img,

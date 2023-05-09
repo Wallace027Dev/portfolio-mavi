@@ -22,7 +22,7 @@ const Main = styled.main`
 
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
-    margin: 5rem 6rem;
+    margin: 6rem 1rem;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;

@@ -10,12 +10,12 @@ const Main = styled.section`
 
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
 
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
-    margin-top: 12rem;
+    margin-top: 4rem;
   }
 `;
 
@@ -29,7 +29,7 @@ function Orders() {
           alt="Pintura de Amanda"
           material="Tinta Acrílica e Marcador"
           date="jan/2023"
-          measure="40L x 50A (cm)"
+          measure="40x50 (cm)"
         />
 
         <ImageRight
@@ -37,14 +37,14 @@ function Orders() {
           alt="Pintura de Henrry"
           material="Tinta Acrílica e Marcador"
           date="mar/2023"
-          measure="30L x 60A (cm)"
+          measure="30x60 (cm)"
         />
         <ImageLeft
           foto={crianca}
           alt="Pintura de Amanda"
           material="Tinta Acrílica e Marcador"
           date="jan/2023"
-          measure="40L x 50A (cm)"
+          measure="40x50 (cm)"
         />
 
         <ImageRight
@@ -52,7 +52,7 @@ function Orders() {
           alt="Pintura de Henrry"
           material="Tinta Acrílica e Marcador"
           date="mar/2023"
-          measure="30L x 60A (cm)"
+          measure="30x60 (cm)"
         />
       </div>
     </Main>
