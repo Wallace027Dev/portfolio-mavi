@@ -42,11 +42,6 @@ const FotoDiv = styled.div`
       height: 30vh;
     }
   }
-	.desc-arte {
-    opacity: 1;
-		color: var(--font);
-		transition: none;
-  }
 `;
 
 function Fotos(props) {
