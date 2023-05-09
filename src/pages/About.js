@@ -97,6 +97,7 @@ const Main = styled.main`
 function About() {
   return (
     <Main>
+			<title>Sobre mim</title>
       <section className="about-form">
         <div>
           <h2>Nascida no Brasil em 2004, No Espírito Santo.</h2>

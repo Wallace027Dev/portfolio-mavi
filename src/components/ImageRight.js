@@ -42,6 +42,7 @@ const Main = styled.section`
 
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
+		margin-bottom: 6rem;
     img {
       width: 40vw;
     }

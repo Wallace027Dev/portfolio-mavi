@@ -32,6 +32,9 @@ const Navigator = styled.nav`
 
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
+    div {
+      margin-top: 0rem;
+    }
     .user-title {
       margin-top: 4rem;
       h1 {
@@ -39,7 +42,21 @@ const Navigator = styled.nav`
       }
     }
     .navigation {
-      visibility: hidden;
+      position: relative;
+      left: auto;
+      top: auto;
+      display: flex;
+      flex-direction: column;
+      a {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .lnk1 {
+        margin-top: 7.5rem;
+      }
     }
   }
 `;
@@ -49,7 +66,7 @@ function Nav() {
     <>
       <Navigator>
         <div className="navigation">
-          <Link to="/">WORK</Link>
+          <Link className="lnk1" to="/">WORK</Link>
           <Link to="/about">ABOUT & CONTACT</Link>
         </div>
         <div className="user-title">
