@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Button from "../components/Button";
 
 const Main = styled.main`
+margin-top: 4rem;
   opacity: 0;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -40,10 +41,12 @@ const Main = styled.main`
           border-radius: 0.3rem;
           border: none;
           margin: 1.2rem 0 3rem 0;
-          font-family: "Bebas Neue", cursive;
-          font-size: 1.6rem;
-          padding: 1rem;
-          color: var(--inpt-font);
+          ::placeholder {
+            color: var(--inpt-font);
+            font-family: "Bebas Neue", cursive;
+            font-size: 1.6rem;
+            padding: 1rem;
+          }
         }
         textarea {
           height: 13.25rem;
@@ -97,7 +100,7 @@ const Main = styled.main`
 function About() {
   return (
     <Main>
-			<title>Sobre mim</title>
+      <title>Sobre mim</title>
       <section className="about-form">
         <div>
           <h2>Nascida no Brasil em 2004, No Espírito Santo.</h2>
@@ -108,16 +111,16 @@ function About() {
         </div>
         <div className="form">
           <form method="POST">
-            <label for="name">NOME</label>
-            <input type="text" id="name" value={"Seu nome aqui..."} />
-            <label for="email">ENDEREÇO DE EMAIL</label>
-            <input type="email" id="email" value={"Seu email aqui..."} />
-            <label for="message">Mensagem</label>
+            <label htmlFor="name">NOME</label>
+            <input type="text" id="name" placeholder={"Seu nome aqui..."} />
+            <label htmlFor="email">ENDEREÇO DE EMAIL</label>
+            <input type="email" id="email" placeholder={"Seu email aqui..."} />
+            <label htmlFor="message">Mensagem</label>
             <textarea
               id="message"
               name="message"
               rows="5"
-              value={"Me diga o que deseja..."}
+              placeholder={"Me diga o que deseja..."}
             />
             <Button />
           </form>

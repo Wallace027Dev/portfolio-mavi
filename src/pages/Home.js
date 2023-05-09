@@ -30,7 +30,7 @@ const Main = styled.main`
 
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
-    margin: 15rem 3rem;
+    margin: 4rem 1rem;
     display: flex;
     flex-direction: column;
   }
