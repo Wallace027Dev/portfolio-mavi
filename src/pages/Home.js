@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import Fotos from "../components/Fotos";
 
-import bairro from "../images/bairro.jpeg";
-import crianca from "../images/crianca.jpeg";
-import feira from "../images/feira.jpeg";
+import bairro from "../assets/bairro.jpeg";
+import crianca from "../assets/crianca.jpeg";
+import feira from "../assets/feira.jpeg";
 import { Link } from "react-router-dom";
-//import henri from "../images/henri.jpeg";
-//import panificadora from "../images/panificadora.jpeg";
+//import henri from "../assets/henri.jpeg";
+//import panificadora from "../assets/panificadora.jpeg";
 
 const Main = styled.main`
   margin-top: 10rem;
@@ -22,8 +22,8 @@ const Main = styled.main`
 
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
-    margin: 15rem 6rem;
-    grid-template-columns: repeat(2, 1fr);
+    margin: 5rem 6rem;
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
   }
@@ -38,11 +38,16 @@ const Main = styled.main`
 function Home() {
   return (
     <Main>
-      <Link to="landscapes">
-        <Fotos foto={bairro} alt="Paisagens" />
+      <title>My Portfolio</title>
+      <Link to="orders">
+        <Fotos foto={crianca} alt="Página de Encomendas" />
       </Link>
-      <Fotos foto={crianca} alt="Realismo" />
-      <Fotos foto={feira} alt="Pinturas em Tela" />
+      <Link to="arts">
+        <Fotos foto={bairro} alt="Página de Obras Artísticas" />
+      </Link>
+      <Link to="projects">
+        <Fotos foto={feira} alt="Página de Projetos" />
+      </Link>
     </Main>
   );
 }

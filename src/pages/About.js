@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import banner from "../images/banner.webp";
 import Button from "../components/Button";
 
 const Main = styled.main`
@@ -8,11 +7,6 @@ const Main = styled.main`
   animation-fill-mode: forwards;
   animation-name: fade-in-down;
 
-  .about {
-    .imgBanner {
-      width: 100%;
-    }
-  }
   .about-form {
     display: flex;
     flex-direction: row;
@@ -103,9 +97,6 @@ const Main = styled.main`
 function About() {
   return (
     <Main>
-      <div className="about">
-        <img className="imgBanner" src={banner} alt="Banner" />
-      </div>
       <section className="about-form">
         <div>
           <h2>Nascida no Brasil em 2004, No Espírito Santo.</h2>

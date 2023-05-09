@@ -21,7 +21,7 @@ const Main = styled.section`
 
   .imageDesc {
     width: 25vw;
-    margin-left: 10vw;
+    margin-left: 2.5%;
 
     animation-name: fade-in-right;
   }
@@ -63,19 +63,10 @@ function ImageLeft(props) {
       <div className="imageDesc">
         <h1>{props.alt}</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus
-          augue lacus, congue egestas dolor gravida in. Donec blandit justo ut
-          magna fringilla egestas. Sed varius faucibus tellus, at semper turpis
-          porta sit amet. Sed venenatis sapien at molestie fringilla. Aenean nec
-          dolor risus. Etiam bibendum aliquam sollicitudin. Integer sed nunc
-          molestie massa posuere ultricies ac vitae lacus. Aenean sit amet
-          consequat ante. Aliquam lacinia enim sit amet semper sodales. Integer
-          in interdum libero. Praesent eu fermentum arcu, sit amet pellentesque
-          augue. Donec orci dolor, scelerisque vel lacus aliquet, luctus
-          vehicula leo. Suspendisse interdum nisl eu imperdiet maximus. Donec in
-          pellentesque lacus, quis pretium enim. Nulla pellentesque quam quis ex
-          congue semper non a nulla. Duis pretium diam sed ante dictum
-          scelerisque.
+          {props.desc} <br />
+          Material usado: {props.material} <br />
+          Feita em: {props.date} <br />
+          Tamanho: {props.measure}
         </p>
       </div>
     </Main>
