@@ -35,11 +35,18 @@ const FotoDiv = styled.div`
 
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
-		.container {
-    height: 30vh;
-		}
+    .container {
+      height: 30vh;
+      .desc-arte {
+        opacity: 1;
+        color: var(--font);
+      }
+    }
     img {
       height: 30vh;
+      :hover {
+        filter: none;
+      }
     }
   }
 `;

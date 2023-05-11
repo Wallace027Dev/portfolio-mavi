@@ -6,20 +6,26 @@ import ImageLeft from "../components/ImageLeft";
 import ImageRight from "../components/ImageRight";
  */
 const Main = styled.section`
-  margin-top: 18rem;
-	h1 {
-		font-size: 10rem;
-		color: white;
-	}
+  margin-top: 12rem;
+  height: 40vh;
+  h1 {
+    font-size: 10rem;
+    color: var(--inpt-font);
+  }
 
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
-    margin-top: 6rem;
+		height: 30vh;
+    h1 {
+      font-size: 8rem;
+    }
   }
 
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
-    margin-top: 4rem;
+		h1 {
+      font-size: 4rem;
+    }
   }
 `;
 
@@ -28,7 +34,7 @@ function Projects() {
     <Main>
       <title>My Projects</title>
       <div>
-        <h1>Um olá mundo bem grandão<br/> pra tampar o vazio</h1>
+        <h1>In working...</h1>
       </div>
     </Main>
   );

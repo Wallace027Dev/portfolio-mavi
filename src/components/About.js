@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import Button from "../components/Button";
+import Button from "./Button";
 
-const Main = styled.main`
-margin-top: 4rem;
+const Component = styled.section`
+  margin-top: 4rem;
   opacity: 0;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -99,7 +99,7 @@ margin-top: 4rem;
 
 function About() {
   return (
-    <Main>
+    <Component>
       <title>Sobre mim</title>
       <section className="about-form">
         <div>
@@ -126,7 +126,7 @@ function About() {
           </form>
         </div>
       </section>
-    </Main>
+    </Component>
   );
 }
 

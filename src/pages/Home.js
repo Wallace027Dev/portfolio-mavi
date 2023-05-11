@@ -5,10 +5,11 @@ import bairro from "../assets/bairro.jpeg";
 import crianca from "../assets/crianca.jpeg";
 import feira from "../assets/feira.jpeg";
 import { Link } from "react-router-dom";
+import About from "../components/About";
 //import henri from "../assets/henri.jpeg";
 //import panificadora from "../assets/panificadora.jpeg";
 
-const Main = styled.main`
+const Component = styled.section`
   margin-top: 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -37,18 +38,21 @@ const Main = styled.main`
 `;
 function Home() {
   return (
-    <Main>
+    <>
       <title>My Portfolio</title>
-      <Link to="orders">
-        <Fotos foto={crianca} alt="Página de Encomendas" />
-      </Link>
-      <Link to="arts">
-        <Fotos foto={bairro} alt="Página de Obras Artísticas" />
-      </Link>
-      <Link to="projects">
-        <Fotos foto={feira} alt="Página de Projetos" />
-      </Link>
-    </Main>
+      <Component>
+        <Link to="orders">
+          <Fotos foto={crianca} alt="Página de Encomendas" />
+        </Link>
+        <Link to="arts">
+          <Fotos foto={bairro} alt="Página de Obras Artísticas" />
+        </Link>
+        <Link to="projects">
+          <Fotos foto={feira} alt="Página de Projetos" />
+        </Link>
+      </Component>
+      <About />
+    </>
   );
 }
 
