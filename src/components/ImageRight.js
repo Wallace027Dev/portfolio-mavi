@@ -15,29 +15,36 @@ const Main = styled.section`
   }
 
   img {
-    width: 25vw;
+    width: 35vw;
     animation-name: fade-in-right;
   }
 
   .imageDesc {
-    width: 25vw;
+    width: 35vw;
     margin-right: 2.5%;
 
     animation-name: fade-in-left;
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: var(--font);
   }
   p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--inpt-font);
+    font-family: 'Montserrat', sans-serif;
   }
 
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
     margin-bottom: 14rem;
+    h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
   }
 
   /* Para telas menores que 768px (celulares em modo paisagem) */
@@ -47,10 +54,10 @@ const Main = styled.section`
       width: 40vw;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     p {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   }
 `;

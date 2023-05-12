@@ -12,15 +12,16 @@ const Component = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: center;
 
     h2 {
-      font-size: 2rem;
+      font-size: 3.5rem;
       color: var(--font);
     }
     h3 {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       color: var(--inpt-font);
+      font-family: 'Montserrat', sans-serif;
     }
 
     .form {
@@ -41,12 +42,10 @@ const Component = styled.section`
           border-radius: 0.3rem;
           border: none;
           margin: 1.2rem 0 3rem 0;
-          ::placeholder {
-            color: var(--inpt-font);
-            font-family: "Bebas Neue", cursive;
-            font-size: 1.6rem;
-            padding: 1rem;
-          }
+          padding: 2rem;
+          font-family: 'Montserrat', sans-serif;
+          color: var(--inpt-font);
+          font-size: 1.6rem;
         }
         textarea {
           height: 13.25rem;
@@ -83,10 +82,15 @@ const Component = styled.section`
       margin: 0 auto;
       text-align: center;
       width: 75vw;
+      h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
       .form {
         form {
           margin-top: 2rem;
-
           input,
           textarea {
             width: 85vw;
@@ -103,10 +107,14 @@ function About() {
       <title>Sobre mim</title>
       <section className="about-form">
         <div>
-          <h2>Nascida no Brasil em 2004, em Niterói.</h2>
+          <h2>Nascida no Brasil em 2005, em Niterói.</h2>
           <h3>
-            Procuro oportunidades de trabalho onde eu possa aprender e agregar
-            para a empresa. Fico a disposição!
+            Artista e ilustradora freelancer. <br />
+            Comissões abertas para novos projetos,<br />
+            peça um orçamento pelo formulário. <br />
+            Uso no meu trabalho: tinta acrílica,<br />
+            marcadores a base d'água,<br />
+            giz pastel oleoso, Illustrator e Photoshop.
           </h3>
         </div>
         <div className="form">

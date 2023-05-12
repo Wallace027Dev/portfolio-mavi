@@ -6,7 +6,7 @@ import ImageLeft from "../components/ImageLeft";
 import ImageRight from "../components/ImageRight";
 
 const Main = styled.section`
-  margin-top: 18rem;
+  margin-top: 8rem;
 
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
@@ -24,21 +24,6 @@ function Orders() {
     <Main>
       <title>My Orders</title>
       <div>
-        <ImageLeft
-          foto={crianca}
-          alt="Pintura de Amanda"
-          material="Tinta Acrílica e Marcador"
-          date="jan/2023"
-          measure="40x50 (cm)"
-        />
-
-        <ImageRight
-          foto={henrry}
-          alt="Pintura de Henrry"
-          material="Tinta Acrílica e Marcador"
-          date="mar/2023"
-          measure="30x60 (cm)"
-        />
         <ImageLeft
           foto={crianca}
           alt="Pintura de Amanda"

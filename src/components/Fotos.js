@@ -8,13 +8,17 @@ const FotoDiv = styled.div`
     flex-direction: row;
     justify-content: space-between;
     height: 80vh;
-    :hover {
-      cursor: pointer;
-      .desc-arte {
-        opacity: 1;
-        transition: opacity 0.75s ease;
-        color: var(--font);
-      }
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+  :hover {
+    cursor: pointer;
+    .desc-arte {
+      opacity: 1;
+      transition: opacity 1.25s ease;
+      color: var(--font);
+      pointer-events: none;
     }
   }
 
@@ -22,7 +26,7 @@ const FotoDiv = styled.div`
     width: 100%;
     object-fit: cover;
     :hover {
-      filter: brightness(25%);
+      filter: brightness(35%);
     }
   }
   .desc-arte {
@@ -37,6 +41,9 @@ const FotoDiv = styled.div`
   @media screen and (max-width: 768px) {
     .container {
       height: 30vh;
+      h1 {
+      font-size: 2rem;
+    }
       .desc-arte {
         opacity: 1;
         color: var(--font);

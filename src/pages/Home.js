@@ -10,7 +10,7 @@ import About from "../components/About";
 //import panificadora from "../assets/panificadora.jpeg";
 
 const Component = styled.section`
-  margin-top: 10rem;
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 1rem;
@@ -23,7 +23,7 @@ const Component = styled.section`
 
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
-    margin: 6rem 1rem;
+    margin: 1rem;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
@@ -31,7 +31,7 @@ const Component = styled.section`
 
   /* Para telas menores que 768px (celulares em modo paisagem) */
   @media screen and (max-width: 768px) {
-    margin: 4rem 1rem;
+    margin:1rem;
     display: flex;
     flex-direction: column;
   }
@@ -42,13 +42,13 @@ function Home() {
       <title>My Portfolio</title>
       <Component>
         <Link to="orders">
-          <Fotos foto={crianca} alt="Página de Encomendas" />
+          <Fotos foto={crianca} alt="Encomendas" />
         </Link>
         <Link to="arts">
-          <Fotos foto={bairro} alt="Página de Obras Artísticas" />
+          <Fotos foto={bairro} alt="Arte" />
         </Link>
         <Link to="projects">
-          <Fotos foto={feira} alt="Página de Projetos" />
+          <Fotos foto={feira} alt="Projetos" />
         </Link>
       </Component>
       <About />

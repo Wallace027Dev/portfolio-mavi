@@ -15,7 +15,7 @@ const Main = styled.section`
   }
 
   img {
-    width: 25vw;
+    width: 35vw;
     animation-name: fade-in-left;
   }
 
@@ -27,12 +27,13 @@ const Main = styled.section`
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: var(--font);
   }
   p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--inpt-font);
+    font-family: 'Montserrat', sans-serif;
   }
 
   /* Para telas menores que 1440px (tablets e celulares) */
