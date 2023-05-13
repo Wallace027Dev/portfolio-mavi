@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 import crianca from "../assets/crianca.jpeg";
 import henrry from "../assets/henrry.jpeg";
+import romeu from "../assets/romeu.jpeg";
+
 import ImageLeft from "../components/ImageLeft";
 import ImageRight from "../components/ImageRight";
 
-const Main = styled.section`
+const Component = styled.section`
   margin-top: 8rem;
 
   /* Para telas menores que 1440px (tablets e celulares) */
@@ -21,12 +23,12 @@ const Main = styled.section`
 
 function Orders() {
   return (
-    <Main>
-      <title>My Orders</title>
+    <Component>
+      <title>Encomendas</title>
       <div>
         <ImageLeft
           foto={crianca}
-          alt="Pintura de Amanda"
+          alt="Amanda"
           material="Tinta Acrílica e Marcador"
           date="jan/2023"
           measure="40x50 (cm)"
@@ -34,13 +36,20 @@ function Orders() {
 
         <ImageRight
           foto={henrry}
-          alt="Pintura de Henrry"
+          alt="Henrry"
           material="Tinta Acrílica e Marcador"
           date="mar/2023"
           measure="30x60 (cm)"
         />
+                <ImageLeft
+          foto={romeu}
+          alt="Romeu"
+          material="Tinta Acrílica e Marcador"
+          date="dez/2022"
+          measure="40x40 (cm)"
+        />
       </div>
-    </Main>
+    </Component>
   );
 }
 

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
+import tenis from "../assets/tenis.png";
+import panificadora from "../assets/panificadora.png";
 import bairro from "../assets/bairro.jpeg";
-import panificadora from "../assets/panificadora.jpeg";
-import henrry from "../assets/henrry.jpeg";
-import romeu from "../assets/romeu.jpeg";
+import feira from "../assets/bairro.jpeg";
 import maviBlue from "../assets/mavi-blue.jpeg";
 import maviOrange from "../assets/mavi-orange.jpeg";
 import ImageLeft from "../components/ImageLeft";
@@ -26,63 +26,49 @@ const Main = styled.section`
 function Arts() {
   return (
     <Main>
-      <title>My Arts</title>
+      <title>Artes</title>
       <div>
         <ImageLeft
-          foto={panificadora}
-          alt="Pintura da Padaria do Ataíde"
+          foto={feira}
+          alt="Dia de Feira"
           material="Tinta Acrílica e Marcador"
-          date="mai/2022"
-          measure="falta (cm)"
+          date="jul/2022"
+          measure="50x70 (cm)"
         />
         <ImageRight
-          foto={henrry}
-          alt="Pintura de Henrry"
-          material="Tinta Acrílica e Marcador"
-          date="mar/2023"
-          measure="falta (cm)"
-        />
-        <ImageLeft
           foto={bairro}
-          alt="Pintura Tênis no Fio"
-          material="Tinta Acrílica e Marcador"
-          date="mar/2022"
-          measure="falta (cm)"
-        />
-        <ImageRight
-          foto={panificadora}
-          alt="Pintura Vista da Janela"
+          alt="Vista da Janela"
           material="Tinta Acrílica e Marcador"
           date="fev/2022"
-          measure="falta (cm)"
+          measure="30x60 (cm)"
+        />
+        <ImageLeft
+          foto={tenis}
+          alt="Tênis no Fio"
+          material="Tinta Acrílica e Marcador"
+          date="mar/2022"
+          measure="40x40 (cm)"
+        />
+        <ImageRight
+          foto={panificadora}
+          alt="Vista da Janela"
+          material="Tinta Acrílica e Marcador"
+          date="fev/2022"
+          measure="40x60 (cm)"
         />
         <ImageLeft
           foto={maviBlue}
-          alt="Pintura Tênis no Fio"
+          alt="Velha Infância I"
           material="Tinta Acrílica e Marcador"
-          date="mar/2022"
-          measure="falta (cm)"
+          date="abril/2023"
+          measure="30x60 (cm)"
         />
         <ImageRight
           foto={maviOrange}
-          alt="Pintura Vista da Janela"
+          alt="Velha Infância II"
           material="Tinta Acrílica e Marcador"
-          date="fev/2022"
-          measure="falta (cm)"
-        />
-        <ImageLeft
-          foto={romeu}
-          alt="Pintura Tênis no Fio"
-          material="Tinta Acrílica e Marcador"
-          date="mar/2022"
-          measure="falta (cm)"
-        />
-        <ImageRight
-          foto={maviOrange}
-          alt="Pintura Vista da Janela"
-          material="Tinta Acrílica e Marcador"
-          date="fev/2022"
-          measure="falta (cm)"
+          date="abril/2023"
+          measure="30x60 (cm)"
         />
       </div>
     </Main>

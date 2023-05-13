@@ -3,7 +3,8 @@ import Fotos from "../components/Fotos";
 
 import bairro from "../assets/bairro.jpeg";
 import crianca from "../assets/crianca.jpeg";
-import feira from "../assets/feira.jpeg";
+import feira from "../assets/feira.png";
+
 import { Link } from "react-router-dom";
 import About from "../components/About";
 //import henri from "../assets/henri.jpeg";
@@ -39,7 +40,7 @@ const Component = styled.section`
 function Home() {
   return (
     <>
-      <title>My Portfolio</title>
+      <title>Meu Portfolio</title>
       <Component>
         <Link to="orders">
           <Fotos foto={crianca} alt="Encomendas" />
