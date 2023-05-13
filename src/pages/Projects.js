@@ -1,11 +1,6 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-/* 
-import crianca from "../assets/crianca.jpeg";
-import henrry from "../assets/henrry.jpeg";
-import ImageLeft from "../components/ImageLeft";
-import ImageRight from "../components/ImageRight";
- */
+import Arrow from '../components/Arrow'
+
 const Component = styled.section`
   margin-top: 12rem;
   height: 55vh;
@@ -43,11 +38,9 @@ function Projects() {
   return (
     <Component>
       <title>Projetos</title>
+      <Arrow />
       <div>
         <h1 className="pulsando">Em breve...</h1>
-        <Link to="/">
-          <h2>Voltar para janela prícipal</h2>
-        </Link>
       </div>
     </Component>
   );

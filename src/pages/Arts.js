@@ -3,13 +3,17 @@ import styled from "styled-components";
 import tenis from "../assets/tenis.png";
 import panificadora from "../assets/panificadora.png";
 import bairro from "../assets/bairro.jpeg";
-import feira from "../assets/bairro.jpeg";
+import feira from "../assets/feira.png";
 import maviBlue from "../assets/mavi-blue.jpeg";
 import maviOrange from "../assets/mavi-orange.jpeg";
+import pinguim from "../assets/pinguim.jpeg";
+
 import ImageLeft from "../components/ImageLeft";
 import ImageRight from "../components/ImageRight";
+import Arrow from '../components/Arrow'
 
-const Main = styled.section`
+
+const Component = styled.section`
   margin-top: 8rem;
 
   /* Para telas menores que 1440px (tablets e celulares) */
@@ -25,8 +29,9 @@ const Main = styled.section`
 
 function Arts() {
   return (
-    <Main>
+    <Component>
       <title>Artes</title>
+      <Arrow />
       <div>
         <ImageLeft
           foto={feira}
@@ -51,7 +56,7 @@ function Arts() {
         />
         <ImageRight
           foto={panificadora}
-          alt="Vista da Janela"
+          alt="Padaria Ataíde"
           material="Tinta Acrílica e Marcador"
           date="fev/2022"
           measure="40x60 (cm)"
@@ -70,8 +75,22 @@ function Arts() {
           date="abril/2023"
           measure="30x60 (cm)"
         />
+        <ImageLeft
+          foto={pinguim}
+          alt="Pinguins"
+          material="Tinta Acrílica e Marcador"
+          date="abril/2023"
+          measure="20x20 (cm)"
+        />
+        <ImageRight
+          foto={maviOrange}
+          alt="Velha Infância II"
+          material="Tinta Acrílica e Marcador"
+          date="abril/2023"
+          measure="30x60 (cm)"
+        />
       </div>
-    </Main>
+    </Component>
   );
 }
 

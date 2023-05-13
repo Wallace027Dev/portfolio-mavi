@@ -6,6 +6,7 @@ import romeu from "../assets/romeu.jpeg";
 
 import ImageLeft from "../components/ImageLeft";
 import ImageRight from "../components/ImageRight";
+import Arrow from '../components/Arrow'
 
 const Component = styled.section`
   margin-top: 8rem;
@@ -25,6 +26,7 @@ function Orders() {
   return (
     <Component>
       <title>Encomendas</title>
+      <Arrow />
       <div>
         <ImageLeft
           foto={crianca}

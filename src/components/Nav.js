@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const Navigator = styled.nav`
   .navigation {
 		background-color: var(--inpt-bg);
@@ -9,6 +10,13 @@ const Navigator = styled.nav`
     align-items: center;
     font-size: 3.5rem;
 		color: var(--font);
+  }
+
+  /* Para telas menores que 768px (celulares em modo paisagem) */
+  @media screen and (max-width: 768px) {
+    .navigation{
+      font-size: 2rem;
+    }
   }
 `;
 
