@@ -121,7 +121,7 @@ function About () {
       <title>Sobre mim</title>
       <section className='about-form'>
         <div>
-          <h2>Nascida no Brasil em 2005, em Niterói.</h2>
+          <h2>Nascida em 2005 na cidade de Niterói.</h2>
           <h3>
             Artista e ilustradora freelancer. <br />
             Comissões abertas para novos projetos,
