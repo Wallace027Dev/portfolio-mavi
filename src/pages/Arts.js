@@ -7,6 +7,9 @@ import feira from "../assets/feira.png";
 import maviBlue from "../assets/mavi-blue.jpeg";
 import maviOrange from "../assets/mavi-orange.jpeg";
 import pinguim from "../assets/pinguim.jpeg";
+import dogs from "../assets/2dogs.png";
+import familia from "../assets/familia.png";
+import mocaMeiaIdade from "../assets/moca-meia-idade.jfif";
 
 import ImageLeft from "../components/ImageLeft";
 import ImageRight from "../components/ImageRight";
@@ -58,36 +61,50 @@ function Arts() {
           foto={panificadora}
           alt="Padaria Ataíde"
           material="Tinta Acrílica e Marcador"
-          date="fev/2022"
+          date="mai/2022"
           measure="40x60 (cm)"
         />
         <ImageLeft
           foto={maviBlue}
           alt="Velha Infância I"
           material="Tinta Acrílica e Marcador"
-          date="abril/2023"
+          date="abr/2023"
           measure="30x60 (cm)"
         />
         <ImageRight
           foto={maviOrange}
           alt="Velha Infância II"
           material="Tinta Acrílica e Marcador"
-          date="abril/2023"
+          date="abr/2023"
           measure="30x60 (cm)"
         />
         <ImageLeft
           foto={pinguim}
           alt="Pinguins"
           material="Tinta Acrílica e Marcador"
-          date="abril/2023"
+          date="jul/2021"
           measure="20x20 (cm)"
         />
         <ImageRight
-          foto={maviOrange}
-          alt="Velha Infância II"
+          foto={dogs}
+          alt="Snow e Moana"
           material="Tinta Acrílica e Marcador"
-          date="abril/2023"
-          measure="30x60 (cm)"
+          date="set/2021"
+          measure="70x60 (cm)"
+        />
+        <ImageLeft
+          foto={familia}
+          alt="Família"
+          material="Tinta Acrílica e Marcador"
+          date="fev/2022"
+          measure="40x50 (cm)"
+        />
+        <ImageRight
+          foto={mocaMeiaIdade}
+          alt="Snow e Moana"
+          material="Tinta Acrílica e Marcador"
+          date="set/2021"
+          measure="70x60 (cm)"
         />
       </div>
     </Component>

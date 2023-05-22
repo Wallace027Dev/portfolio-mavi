@@ -1,5 +1,7 @@
-import styled from "styled-components";
-import Button from "./Button";
+import styled from 'styled-components'
+import instagram from '../assets/icons/instagram.svg'
+import linkedin from '../assets/icons/linkedin.svg'
+import behance from '../assets/icons/behance.svg'
 
 const Component = styled.section`
   margin-top: 4rem;
@@ -57,6 +59,17 @@ const Component = styled.section`
     }
   }
 
+  .social-medias {
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+    margin-top: 5rem;
+
+    img {
+      height: 100px;
+    }
+  }
+
   /* Para telas menores que 1440px (tablets e celulares) */
   @media screen and (max-width: 1440px) {
     .about-form {
@@ -83,11 +96,11 @@ const Component = styled.section`
       text-align: center;
       width: 75vw;
       h2 {
-      font-size: 2.5rem;
-    }
-    h3 {
-      font-size: 1.5rem;
-    }
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
       .form {
         form {
           margin-top: 2rem;
@@ -99,43 +112,80 @@ const Component = styled.section`
       }
     }
   }
-`;
+`
 
-function About() {
+function About () {
+
   return (
     <Component>
       <title>Sobre mim</title>
-      <section className="about-form">
+      <section className='about-form'>
         <div>
           <h2>Nascida no Brasil em 2005, em Niterói.</h2>
           <h3>
             Artista e ilustradora freelancer. <br />
-            Comissões abertas para novos projetos,<br />
+            Comissões abertas para novos projetos,
+            <br />
             peça um orçamento pelo formulário. <br />
-            Uso no meu trabalho: tinta acrílica,<br />
-            marcadores a base d'água,<br />
+            Uso no meu trabalho: tinta acrílica,
+            <br />
+            marcadores a base d'água,
+            <br />
             giz pastel oleoso, Illustrator e Photoshop.
           </h3>
         </div>
-        <div className="form">
-          <form method="POST">
-            <label htmlFor="name">NOME</label>
-            <input type="text" id="name" placeholder={"Seu nome aqui..."} />
-            <label htmlFor="email">ENDEREÇO DE EMAIL</label>
-            <input type="email" id="email" placeholder={"Seu email aqui..."} />
-            <label htmlFor="message">Mensagem</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder={"Me diga o que deseja..."}
+        <section className="social-medias">
+          <a href="https://instagram.com/_franca_art_">
+            <img src={instagram} alt="instagram" />
+          </a>
+          <a href="https://www.linkedin.com/in/maria-vitoria-alcantara-fran%C3%A7a-4a2886247/">
+            <img src={linkedin} alt="linkedin" />
+          </a>
+          <a href="https://www.behance.net/mariavfranca">
+            <img src={behance} alt="behance" />
+          </a>
+        </section>
+        {/*         
+        <div className='form'>
+          <form
+            action='/enviar'
+            method='POST'
+            encType='multipart/form-data'
+          >
+            <label htmlFor='name'>NOME</label>
+            <input
+              type='text'
+              id='name'
+              placeholder={'Seu nome aqui...'}
+              onChange={event => setName(event.target.value)}
+              value={name}
             />
-            <Button />
+            <label htmlFor='email'>ENDEREÇO DE EMAIL</label>
+            <input
+              type='text'
+              id='email'
+              placeholder={'Seu email aqui...'}
+              onChange={event => setEmail(event.target.value)}
+              value={email}
+            />
+            <label htmlFor='message'>Mensagem</label>
+            <textarea
+              id='message'
+              name='message'
+              rows='5'
+              placeholder={'Me diga o que deseja...'}
+              onChange={event => setMessage(event.target.value)}
+              value={message}
+            />
+            <label htmlFor='anexo'>ENDEREÇO DE EMAIL</label>
+            <input onChange={handleAnexoChange} type='file' id='anexo' />
+            <Button type='submit' />
           </form>
-        </div>
+        </div> */
+        }
       </section>
     </Component>
-  );
+  )
 }
 
-export default About;
+export default About
