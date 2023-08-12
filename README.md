@@ -1,4 +1,4 @@
-<h1  align="center">PORTIFOLIO - Maria V França</h1>
+<h1  align="center">PORTFOLIO - Maria V França</h1>
 
 <h4 align="center">📌 Building...</h4>
 
